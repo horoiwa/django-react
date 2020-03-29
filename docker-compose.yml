@@ -1,0 +1,11 @@
+version: '3.7'
+services:
+  django-react:
+    restart: always
+    build: ./django-react
+    ports:
+      - "8000:8000"
+    volumes:
+      - "./django-react:/code"
+    command: ls
+    #command: python manage.py runserver 0.0.0.0:8000
