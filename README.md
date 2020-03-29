@@ -1,5 +1,9 @@
 # React-Django App
 
+基本コマンド
+
+`docker-compose up --build`
+
 ### projectのはじまり
 
 `django-admin.py startproject profiles_project .`
@@ -17,6 +21,19 @@ profiles_projectをcurrentdirで開始
 
 ### 個別アプリケーションの作成
 
-`python manage.py profiles_api`
+`python manage.py startapp profiles_api`
 
 backend-api　projectの作成
+
+
+
+### アプリケーションの登録
+
+`project/setting.py` のinstalled appsへ
+
+```
+    'rest_framework',
+    'rest_framework.authtoken',
+    'profiles_api',
+```
+の登録
