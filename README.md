@@ -4,6 +4,7 @@
 
 `docker-compose up --build`
 
+
 ### projectのはじまり
 
 `django-admin.py startproject profiles_project .`
@@ -31,9 +32,18 @@ backend-api　projectの作成
 
 `project/setting.py` のinstalled appsへ
 
+INSTALLED_APPS = [
 ```
     'rest_framework',
     'rest_framework.authtoken',
     'profiles_api',
 ```
 の登録
+
+### Check working
+
+python manage.py runserver 0.0.0.0:8000
+
+### Memo
+
+マウントするのあまり良くないのか？
