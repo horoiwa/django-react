@@ -40,9 +40,19 @@ INSTALLED_APPS = [
 ```
 の登録
 
-### Check working
+### Check working!!
 
 python manage.py runserver 0.0.0.0:8000
+
+
+
+### Migration is 何？？
+
+モデルに新たな属性を追加するたびにマイグレする必要があるよ
+
+`python manage.py makemigrations profiles_api`
+
+`python manage.py migrate`
 
 ### Memo
 
